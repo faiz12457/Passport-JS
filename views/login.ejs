@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md">
+      <ul class="flex space-x-6 p-4 justify-center text-gray-700 font-semibold">
+        <li><a href="/auth/login" class="hover:text-blue-500">Login</a></li>
+        <li><a href="/auth/logout" class="hover:text-blue-500">Logout</a></li>
+        <li><a href="/" class="hover:text-blue-500">Homepage</a></li>
+      </ul>
+    </nav>
+  
+    <!-- Main Content -->
+    <main class="flex flex-col items-center justify-center h-screen space-y-6">
+      <h1 class="text-3xl font-bold text-gray-800">Welcome</h1>
+  
+      <form action="/auth/google" method="GET">
+        <button class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg shadow-md text-lg">
+          Login with Google
+        </button>
+      </form>
+    </main>
+  
+  </body>
+</html>
